@@ -1,7 +1,7 @@
  <p align = "center">
  <img src="https://github.com/user-attachments/assets/365963bc-7eb8-40d9-9501-6534671ce2c4" width="500" />
  
- # EMFF-2025_V1.0.pb: Energy Material Force Field - 2025, Version 1.0
+ # EMFF-2025_V 1.0.pb: Energy Material Force Field - 2025, Version 1.0
 
 ## Overview
 
@@ -11,9 +11,9 @@
 
 * Thanks to GPU parallel computing architecture, EMFF-2025_V1.0.pb significantly accelerates LAMMPS execution, achieving nearly 30 times speedup. Related research results can be found in the following references:
 
-		Phys. Chem. Chem. Phys., 2022, 24, 25885-25894.([]())
-		Phys. Chem. Chem. Phys., 2023, 25, 12841-12853. [Artical link](**https://docs.deepmodeling.com/projects/deepmd/en/master/third-party/lammps-command.html**).
-		Phys. Chem. Chem. Phys., 2024, 26, 9984-9997.
+  * Phys. Chem. Chem. Phys., 2022, 24, 25885-25894.[Link](https://pubs.rsc.org/en/content/articlelanding/2022/cp/d2cp03511a)
+  * Phys. Chem. Chem. Phys., 2023, 25, 12841-12853. [Link](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d3cp00571b)
+  * Phys. Chem. Chem. Phys., 2024, 26, 9984-9997. [Link](https://pubs.rsc.org/en/content/articlelanding/2024/cp/d4cp00017j)
  
 This force field is applicable to thermal decomposition simulations, equation of state (EOS) calculations, and structural optimizations for energetic materials and their analogous structures/crystals.
 
