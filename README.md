@@ -61,7 +61,7 @@ Prof. Dongping Chen: dc516@bit.edu.cn
 
 Prof. Qingzhao Chu: chuqz@bit.edu.cn
 
-Dr. Mingjie Wen: wmingjie99@163.com
+Mr. Mingjie Wen: wmingjie99@163.com
 
 We welcome your feedback! If you encounter any issues or have suggestions for improvements, please feel free to contact us.
 
