@@ -1,4 +1,5 @@
-# EMFF-2025_V1.0.pb: Energy Material Force Field - 2025, Version 1.0
+# EMFF-2025_V1.0.pb: 
+  Energy Material Force Field - 2025, Version 1.0
 
 ## Overview
 
@@ -43,6 +44,16 @@ For details on model compression methods, please refer to: [Model compress](http
 
 * EMFF-2025_V1.0.pb model was developed under the leadership of Prof. Dongping Chen and Prof. Qingzhao Chu from the School of Mechatronical Engineering of Beijing Institute of Technology and the State Key Laboratory of Explosion Science and Safety Protection
 * If you find EMFF-2025_V1.0.pb useful in your research, we encourage you to star ⭐ this project! When using EMFF-2025_V1.0.pb in scientific publications, please cite the relevant papers.
+```@misc{wen2025generalneuralnetworkpotential,
+      title={A General Neural Network Potential for Energetic Materials with C, H, N, and O elements}, 
+      author={Mingjie Wen and Jiahe Han and Wenjuan Li and Xiaoya Chang and Qingzhao Chu and Dongping Chen},
+      year={2025},
+      eprint={2503.01932},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci},
+      url={https://arxiv.org/abs/2503.01932}, }
+```
+
 
 ## 📩 Contact Us:
 
