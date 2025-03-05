@@ -5,11 +5,9 @@
 
 ## Overview
 
-* EMFF-2025_V1.0.pb provides a powerful, flexible, and user-friendly toolset designed for molecular dynamics (MD) simulations. This force field is developed based on DeePMD-kit ([DeePMD-kit Documentation](https://docs.deepmodeling.com/projects/deepmd/en/master/index.html#)), supporting Windows and Linux platforms and is compatible with LAMMPS 2021 and later versions with DeepMD integration.
+EMFF-2025_V1.0.pb provides a powerful, flexible, and user-friendly toolset designed for molecular dynamics (MD) simulations. This force field is developed based on DeePMD-kit ([DeePMD-kit Documentation](https://docs.deepmodeling.com/projects/deepmd/en/master/index.html#)), supporting Windows and Linux platforms and is compatible with LAMMPS 2021 and later versions with DeepMD integration.
 
-* For the installation and usage of DeepMD-enabled LAMMPS, please refer to the official guide: [LAMMPS-DeepMD Instructions](https://docs.deepmodeling.com/projects/deepmd/en/master/third-party/lammps-command.html).
-
-* Thanks to GPU parallel computing architecture, EMFF-2025_V1.0.pb significantly accelerates LAMMPS execution, achieving nearly 30 times speedup. Related research results can be found in the following references:
+For the installation and usage of DeepMD-enabled LAMMPS, please refer to the official guide: [LAMMPS-DeepMD Instructions](https://docs.deepmodeling.com/projects/deepmd/en/master/third-party/lammps-command.html). Thanks to GPU parallel computing architecture, EMFF-2025_V1.0.pb significantly accelerates LAMMPS execution, achieving nearly 30 times speedup. Related research results can be found in the following references:
 
   * Phys. Chem. Chem. Phys., 2022, 24, 25885-25894.[Link](https://pubs.rsc.org/en/content/articlelanding/2022/cp/d2cp03511a)
   * Phys. Chem. Chem. Phys., 2023, 25, 12841-12853. [Link](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d3cp00571b)
