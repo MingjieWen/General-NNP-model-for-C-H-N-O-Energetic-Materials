@@ -1,7 +1,7 @@
  <p align = "center">
  <img src="https://github.com/user-attachments/assets/365963bc-7eb8-40d9-9501-6534671ce2c4" width="500" />
  
- # EMFF-2025_V 1.0.pb: Energy Material Force Field - 2025, Version 1.0
+ # EMFF-2025_V 1.0.pb: Energetic Material Force Field - 2025, Version 1.0
 
 ## Overview
 
