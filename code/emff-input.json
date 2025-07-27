@@ -1,0 +1,127 @@
+{    
+    "type_map":		["C","H","N","O"],
+    "mass_map":		[12.0, 1.008,14.0067,15.999],
+
+    "init_data_prefix":	"../trainset/",
+    
+    "init_data_sys":	[
+
+      "AIMD-last-new-structure901/CL20-trainset/CHNO/CL-20-144-CCDC/1000",
+      "AIMD-last-new-structure901/CL20-trainset/CHNO/CL-20-144-CCDC/2000",
+      "AIMD-last-new-structure901/CL20-trainset/CHNO/CL-20-144-CCDC/300",
+      "AIMD-last-new-structure901/CL20-trainset/CHNO/CL-20-144-CCDC/3000",
+      "AIMD-last-new-structure901/CL20-trainset/CHNO/CL-20-144-CCDC/4000",
+
+      "AIMD-last-new-structure901/HMX-trainset/CHNO/HMX-CCDC/1000",
+      "AIMD-last-new-structure901/HMX-trainset/CHNO/HMX-CCDC/2000",
+      "AIMD-last-new-structure901/HMX-trainset/CHNO/HMX-CCDC/300",
+      "AIMD-last-new-structure901/HMX-trainset/CHNO/HMX-CCDC/3000",
+      "AIMD-last-new-structure901/HMX-trainset/CHNO/HMX-CCDC/4000",
+
+      "AIMD-last-new-structure901/RDX-trainset/CHNO/RDX-CCDC/1000",
+      "AIMD-last-new-structure901/RDX-trainset/CHNO/RDX-CCDC/2000",
+      "AIMD-last-new-structure901/RDX-trainset/CHNO/RDX-CCDC/300",
+      "AIMD-last-new-structure901/RDX-trainset/CHNO/RDX-CCDC/3000",
+      "AIMD-last-new-structure901/RDX-trainset/CHNO/RDX-CCDC/4000"
+ 
+
+
+  ],
+    "init_multi_systems": true,
+    "sys_format":"lammps/lmp",  
+    "sys_configs_prefix": "./",
+    "sys_configs":	[
+    ["../trainset/lmp/rdx.data"],
+    ["../trainset/lmp/CL20.data"],
+    ["../trainset/lmp/HMX.data"],
+    ["../trainset/lmp/TNT1.data"],
+    ["../trainset/lmp/ADN.data"],
+    ["../trainset/lmp/FOX71.data"],
+    ["../trainset/lmp/TKX501.data"],
+    ["../trainset/lmp/DNBF1.data"],
+    ["../trainset/lmp/BTF1.data"],
+    ["../trainset/lmp/TATB.data"],
+    ["../trainset/lmp/TAGN1.data"],
+    ["../trainset/lmp/NG1.data"],
+    ["../trainset/lmp/PETN1.data"],
+    ["../trainset/lmp/DTTO-c1-P212121.data"],
+    ["../trainset/lmp/DTTO1-c2-Pbca.data"],
+    ["../trainset/lmp/NTO1.data"],
+    ["../trainset/lmp/TEX1.data"],
+    ["../trainset/lmp/BTTN1.data"],
+    ["../trainset/lmp/NC-new.data"],
+    ["../trainset/lmp/TNB1.data"],
+    ["../trainset/lmp/HNS.data"]
+
+
+  ],
+    "numb_models":	4,
+    "default_training_param" : {
+      "model":{
+        "type_map": ["C","H","N","O"],
+        "descriptor":{
+          "type":"se_a",
+          "sel": [40, 80, 40, 40],
+          "rcut_smth": 0.50,
+          "rcut": 6.00,
+          "neuron":	[25, 50, 100],
+          "resnet_dt":	false,
+          "axis_neuron":	12
+        },
+        "fitting_net":{
+          "neuron":		[240, 240, 240],
+          "resnet_dt":		true
+        }
+      },
+      "learning_rate":{
+        "type": "exp",
+        "start_lr":		0.001,
+        "decay_steps":		400,
+        "stop_lr":	1e-08
+      },
+      "loss":{
+        "start_pref_e":		0.02,
+        "limit_pref_e":		1,
+        "start_pref_f":		1000,
+        "limit_pref_f":		1,
+        "start_pref_v":		0.02,
+        "limit_pref_v":		1
+      },
+      "training":{
+        "stop_batch":		400000,
+        "disp_file":		"lcurve.out",
+        "disp_freq":		1000,
+        "numb_test":		10,
+        "save_freq":		1000,
+        "save_ckpt":		"model.ckpt",
+        "disp_training":	true,
+        "time_training":	true
+      }
+    },
+
+    "_comment": "####------------------------ 01. model_devi exploration,",
+
+    "model_devi_dt":		0.0001,
+    "model_devi_skip":		0,
+    "model_devi_f_trust_lo":	6e5,
+    "model_devi_f_trust_hi":	9e5,
+    "model_devi_clean_traj":	false,
+    "model_devi_f_avg_relative": false,
+    "model_devi_jobs":	[
+      {"_idx": "00", "ensemble": "nvt", "temps": [200, 250, 300, 350, 400],   "nsteps":50000, "sys_idx": [0,1,2],  "trj_freq": 100},
+      {"_idx": "01", "ensemble": "nvt", "temps": [200, 250, 300, 350, 400],   "nsteps":500000, "sys_idx": [0,1,2],  "trj_freq": 100}
+     ],
+
+    "_comment": "####------------------------ 02.fp  labeling,",
+
+    "fp_style":     "cp2k",
+    "shuffle_poscar":   false,
+    "fp_task_max":  50,
+    "fp_task_min":  10,
+    "fp_pp_path":   ".",
+    "fp_pp_files":  [],
+    "external_input_path": "template_cp2k.inp",
+    "epsilon": 1.0,
+    "_comment":     " that's all "
+
+}
