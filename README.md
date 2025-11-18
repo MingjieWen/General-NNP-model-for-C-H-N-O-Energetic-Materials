@@ -59,5 +59,5 @@ Prof. Qingzhao Chu: chuqz@bit.edu.cn
 
 Mr. Mingjie Wen: wmingjie99@163.com
 
-We welcome your feedback! If you encounter any issues or have suggestions for improvements, please feel free to contact us.The EMFF-2025 model is also available in the Gitee repository: https://gitee.com/wen-mingjie18/General-NNP-model-for-C-H-N-O-Energetic-Materials111.
+We welcome your feedback! If you encounter any issues or have suggestions for improvements, please feel free to contact us. The EMFF-2025 model is also available in the Gitee repository: https://gitee.com/wen-mingjie18/General-NNP-model-for-C-H-N-O-Energetic-Materials111.
 
