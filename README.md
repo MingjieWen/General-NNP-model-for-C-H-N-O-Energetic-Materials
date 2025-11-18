@@ -46,8 +46,8 @@ For details on model compression methods, please refer to: [Model compress](http
 * If you find EMFF-2025_V1.0.pb useful in your research, we encourage you to star ⭐ this project! When using EMFF-2025_V1.0.pb in scientific publications, please cite the relevant papers.
 ```@misc{wen2025generalneuralnetworkpotential,
       Cite this article：
-       Wen, M., Han, J., Li, W. et al. EMFF-2025: a general neural network potential for energetic materials with C, H, N, and O elements.
-       npj Comput Mater 11, 333 (2025). https://doi.org/10.1038/s41524-025-01809-w
+       Wen, M., Han, J., Li, W. et al. EMFF-2025: a general neural network potential for energetic materials with
+       C, H, N, and O elements. npj Comput Mater 11, 333 (2025). https://doi.org/10.1038/s41524-025-01809-w
 ```
 
 
