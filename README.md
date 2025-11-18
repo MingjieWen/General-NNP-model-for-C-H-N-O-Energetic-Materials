@@ -43,7 +43,7 @@ For details on model compression methods, please refer to: [Model compress](http
 ## Citation & Contact Information
 
 * EMFF-2025_V1.0.pb model was developed under the leadership of Prof. Dongping Chen and Prof. Qingzhao Chu from the School of Mechatronical Engineering of Beijing Institute of Technology and the State Key Laboratory of Explosion Science and Safety Protection
-* If you find EMFF-2025_V1.0.pb useful in your research, we encourage you to star ⭐ this project! When using EMFF-2025_V1.0.pb in scientific publications, please cite the relevant papers.
+* If you find EMFF-2025_V1.0.pb useful in your research, we encourage you to star ⭐ this project! When using EMFF-2025_V1.0.pb in scientific publications, please cite the relevant papers(https://doi.org/10.1038/s41524-025-01809-w).
 ```@misc{wen2025generalneuralnetworkpotential,
       Cite this article：
        Wen, M., Han, J., Li, W. et al. EMFF-2025: a general neural network potential for energetic materials with
